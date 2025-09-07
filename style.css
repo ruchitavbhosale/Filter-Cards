@@ -1,0 +1,45 @@
+
+    body {
+      background: #f3f2ef;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      padding: 20px;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      width: 180px;
+      height: 120px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: capitalize;
+      transition: all 0.4s ease;
+      cursor: pointer;
+    }
+
+    /* Complementary base colors */
+    .grayscale { background: #7f8c8d; filter: grayscale(100%); } /* Neutral gray */
+    .blur { background: #9b59b6; filter: blur(3px); } /* Purple */
+    .brightness { background: #27ae60; filter: brightness(150%); } /* Green */
+    .contrast { background: #2980b9; filter: contrast(200%); } /* Blue */
+    .invert { background: #e67e22; filter: invert(100%); } /* Orange */
+    .opacity { background: #34495e; filter: opacity(50%); } /* Dark slate */
+    .sepia { background: #d35400; filter: sepia(100%); } /* Warm brown */
+    .hue { background: #16a085; filter: hue-rotate(120deg); } /* Teal */
+    .saturate { background: #c0392b; filter: saturate(300%); } /* Red */
+
+    /* Hover effect */
+    .card:hover {
+      filter: none;
+      transform: scale(1.05);
+    }
